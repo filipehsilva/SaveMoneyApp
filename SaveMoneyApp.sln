@@ -3,19 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveMoneyApp.Data", "src\SaveMoneyApp.Data\SaveMoneyApp.Data.csproj", "{FEC4660E-C6D7-42C8-BB0A-5414CFC227A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaveMoneyApp.Api", "src\SaveMoneyApp.Api\SaveMoneyApp.Api.csproj", "{ED1EC3FA-BA0A-4230-941C-DDA616DCABCB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveMoneyApp.Domain", "src\SaveMoneyApp.Domain\SaveMoneyApp.Domain.csproj", "{45D55976-E69D-4CCF-8599-B3B5F0984D85}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveMoneyApp.Services", "src\SaveMoneyApp.Services\SaveMoneyApp.Services.csproj", "{40EEFF09-7237-4415-89A1-E0598E0C3BE5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveMoneyApp.Api", "src\SaveMoneyApp.Api\SaveMoneyApp.Api.csproj", "{ED1EC3FA-BA0A-4230-941C-DDA616DCABCB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveMoneyApp.WebApplication", "src\SaveMoneyApp.WebApplication\SaveMoneyApp.WebApplication.csproj", "{C7ADF9C3-8E3D-4B9D-9C61-5B0F06B772EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaveMoneyApp.WebApplication", "src\SaveMoneyApp.WebApplication\SaveMoneyApp.WebApplication.csproj", "{C7ADF9C3-8E3D-4B9D-9C61-5B0F06B772EF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{0F8DD7F7-5D10-40D5-B99E-8CF6F5E9894F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{F60C7B63-80DA-44A1-B8EA-AB1BFE10AE4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{60D4905A-8872-4194-96F9-DABDE01164BE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaveMoneyApp.Core", "src\SaveMoneyApp.Core\SaveMoneyApp.Core.csproj", "{C6692177-82AC-4E16-866F-55B41C6E85C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveMoneyApp.Business", "src\SaveMoneyApp.Business\SaveMoneyApp.Business.csproj", "{D79366C4-36C1-4061-8C5D-B6A588812DBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveMoneyApp.Data", "src\SaveMoneyApp.Data\SaveMoneyApp.Data.csproj", "{2BD25B47-5CBD-486B-82DD-49859277121E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,18 +25,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FEC4660E-C6D7-42C8-BB0A-5414CFC227A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FEC4660E-C6D7-42C8-BB0A-5414CFC227A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FEC4660E-C6D7-42C8-BB0A-5414CFC227A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FEC4660E-C6D7-42C8-BB0A-5414CFC227A8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{45D55976-E69D-4CCF-8599-B3B5F0984D85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{45D55976-E69D-4CCF-8599-B3B5F0984D85}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{45D55976-E69D-4CCF-8599-B3B5F0984D85}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{45D55976-E69D-4CCF-8599-B3B5F0984D85}.Release|Any CPU.Build.0 = Release|Any CPU
-		{40EEFF09-7237-4415-89A1-E0598E0C3BE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{40EEFF09-7237-4415-89A1-E0598E0C3BE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{40EEFF09-7237-4415-89A1-E0598E0C3BE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{40EEFF09-7237-4415-89A1-E0598E0C3BE5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{ED1EC3FA-BA0A-4230-941C-DDA616DCABCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ED1EC3FA-BA0A-4230-941C-DDA616DCABCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED1EC3FA-BA0A-4230-941C-DDA616DCABCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -43,16 +33,28 @@ Global
 		{C7ADF9C3-8E3D-4B9D-9C61-5B0F06B772EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7ADF9C3-8E3D-4B9D-9C61-5B0F06B772EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7ADF9C3-8E3D-4B9D-9C61-5B0F06B772EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6692177-82AC-4E16-866F-55B41C6E85C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6692177-82AC-4E16-866F-55B41C6E85C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6692177-82AC-4E16-866F-55B41C6E85C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6692177-82AC-4E16-866F-55B41C6E85C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D79366C4-36C1-4061-8C5D-B6A588812DBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D79366C4-36C1-4061-8C5D-B6A588812DBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D79366C4-36C1-4061-8C5D-B6A588812DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D79366C4-36C1-4061-8C5D-B6A588812DBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BD25B47-5CBD-486B-82DD-49859277121E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BD25B47-5CBD-486B-82DD-49859277121E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BD25B47-5CBD-486B-82DD-49859277121E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BD25B47-5CBD-486B-82DD-49859277121E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{FEC4660E-C6D7-42C8-BB0A-5414CFC227A8} = {0F8DD7F7-5D10-40D5-B99E-8CF6F5E9894F}
-		{45D55976-E69D-4CCF-8599-B3B5F0984D85} = {0F8DD7F7-5D10-40D5-B99E-8CF6F5E9894F}
-		{40EEFF09-7237-4415-89A1-E0598E0C3BE5} = {0F8DD7F7-5D10-40D5-B99E-8CF6F5E9894F}
 		{ED1EC3FA-BA0A-4230-941C-DDA616DCABCB} = {0F8DD7F7-5D10-40D5-B99E-8CF6F5E9894F}
 		{C7ADF9C3-8E3D-4B9D-9C61-5B0F06B772EF} = {F60C7B63-80DA-44A1-B8EA-AB1BFE10AE4A}
+		{C6692177-82AC-4E16-866F-55B41C6E85C2} = {60D4905A-8872-4194-96F9-DABDE01164BE}
+		{D79366C4-36C1-4061-8C5D-B6A588812DBD} = {0F8DD7F7-5D10-40D5-B99E-8CF6F5E9894F}
+		{2BD25B47-5CBD-486B-82DD-49859277121E} = {0F8DD7F7-5D10-40D5-B99E-8CF6F5E9894F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6808E25B-0F17-442B-A659-DDB39D2F6808}

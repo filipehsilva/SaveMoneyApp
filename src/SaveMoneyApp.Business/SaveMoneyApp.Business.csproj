@@ -6,9 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Context\" />
-    <Folder Include="Mappings\" />
-    <Folder Include="Repository\" />
+    <Folder Include="Enums\" />
+    <Folder Include="Interfaces\IRepository\" />
+    <Folder Include="Interfaces\IServices\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>
