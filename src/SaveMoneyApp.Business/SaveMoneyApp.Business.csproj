@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Enums\" />
     <Folder Include="Interfaces\IRepository\" />
     <Folder Include="Interfaces\IServices\" />
     <Folder Include="Services\" />
